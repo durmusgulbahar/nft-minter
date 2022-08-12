@@ -124,11 +124,14 @@ export default function Home() {
       <br></br>
       <li>
         Süre kısıtından dolayı projeyi %100 tamamlayamadım. Ana görev olan BSC Testnetinde 
-        NFT Mintleme problemini daha basit haliyle çözebildim.
+        NFT Mintleme problemini daha basit haliyle çözdüm.
       </li>
       <br></br>
       <li>
         Ekrandaki NFT kartı tamamen statiktir. Herhangi bir yerden veri çekmiyorum.
+      </li>
+      <li>
+        Token URI / Metadata kodda statik olarak verilmiştir.
       </li>
       <br></br>
       <li>
@@ -138,6 +141,7 @@ export default function Home() {
       <li>
         Transaction tamamlandıktan sonra linke tıklayarak explorerdan inceleyebilirsiniz
       </li>
+      
     </ul>
     </div>
   )
