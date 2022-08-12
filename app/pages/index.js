@@ -53,6 +53,12 @@ export default function Home() {
     const provider = await web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
     
+    const { chainId } = await web3Provider.getNetwork();
+    if (chainId !== 97) {
+      window.alert("Change the network to BSC TESNET");
+      throw new Error("Change network to BSC TESNET");
+    }
+
     if (needSigner) {
       const signer = web3Provider.getSigner();
       return signer;
@@ -108,7 +114,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
     {walletsContainer()}
-    <a className={styles.link} target="_blank" href=""> GitHub Linki {">"}</a>
+    <a className={styles.link} target="_blank" href="https://github.com/durmusgulbahar/nft-minter"> GitHub Linki {">"}</a>
     <a className={styles.link} target="_blank" href={mintingHash}> Transaction Link {">"}</a>
     </div>
   )
