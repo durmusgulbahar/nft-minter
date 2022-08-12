@@ -116,6 +116,29 @@ export default function Home() {
     {walletsContainer()}
     <a className={styles.link} target="_blank" href="https://github.com/durmusgulbahar/nft-minter"> GitHub Linki {">"}</a>
     <a className={styles.link} target="_blank" href={mintingHash}> Transaction Link {">"}</a>
+    <a className={styles.link} target="_blank" href="https://gateway.pinata.cloud/ipfs/QmXrzMRBtHcDLGD9sKQ4HhrRHaXifgWULTBYt998WbXniT"> Metadata {">"}</a>
+    <ul className={styles.list}>
+      <li>
+        Test tokeni yeterli olsun diye NFT mint fiyatını 10000 Gwei olarak ayarladım
+      </li>
+      <br></br>
+      <li>
+        Süre kısıtından dolayı projeyi %100 tamamlayamadım. Ana görev olan BSC Testnetinde 
+        NFT Mintleme problemini daha basit haliyle çözebildim.
+      </li>
+      <br></br>
+      <li>
+        Ekrandaki NFT kartı tamamen statiktir. Herhangi bir yerden veri çekmiyorum.
+      </li>
+      <br></br>
+      <li>
+        Kaynak kodları incelemek isterseniz GitHub Linkine tıklayınız
+      </li>
+      <br></br>
+      <li>
+        Transaction tamamlandıktan sonra linke tıklayarak explorerdan inceleyebilirsiniz
+      </li>
+    </ul>
     </div>
   )
 }
